@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+.c{
+    background-blend-mode: darken;
+}
+.container{
+    height: 900px;
+    width: 100%;
+    
+    background-image: url(netflix.jpj.jpg);
+    border-color: rgb(35, 35, 35);
+}
+.navleft{
+  
+    height: 80px;
+    width: 20%;
+   margin-left: 14%;
+    padding-top: 0%;
+    margin-top: 1%;
+    display:inline-block;
+    margin-right: 35%;
+    
+
+}
+#netflix{
+width: 160px;
+height: 40px;
+position: relative;
+
+padding-top: 0%;
+margin-left: 10%;
+padding-top: 10px;
+}
+.navright{
+display:inline-block;
+position: relative;
+height: 80px;
+width: 20%;
+margin-top: 0%;
+padding: 10px 0px 0px 0px;
+
+
+}
+#select{
+height: 30px;
+width: 120px;
+padding-left: 10px;
+background: transparent;
+border-radius: 5px;
+color: #ffffff;
+margin-top: 4%;
+}
+
+.fa-light{
+height: 20px;
+}
+#signin{
+  height: 30px;
+  background-color: rgb(221, 42, 42);
+  width: 80px;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  font-size: 15px;
+  margin-top: 2%;
+  cursor: pointer;
+}
+#signin:hover{
+    background-color: #a83e3e;
+}
+.centar-ll{
+    text-align: center;
+    padding-top: 180px;
+    width: 90%;
+   height: 40%;
+    margin: auto;
+    flex-wrap: wrap;
+    
+}
+
+.l1 {
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: 800;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    margin-bottom: 0px;
+
+}
+.l2 {
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 500;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+
+}
+.l3 {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 500;
+    margin: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+
+}
+.esa{
+height: 320px;
+margin: 10px 20% 10px 20%;
+
+
+}
+#email{
+    height: 14%;
+    width: 300px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 15px;
+    padding-left: 10px;
+    flex-wrap: wrap;
+    border-color: #d2cece;
+    background: transparent;
+    backdrop-filter: blur(2px);
+}
+.get{
+    height: 15%;
+    width: 140px;
+    padding-right: 4px;
+    border-radius: 5px;
+   
+    color: #ffffff;
+    background-color: rgb(221, 42, 42);
+    border: none;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 0px;
+    cursor: pointer;
+}
+.get:hover{
+    background-color: #a83e3e;
+}
+#greter{
+    padding-left: 5px;
+    font-size: 15px;
+}
+
+.piture-1{
+    display: flex;
+    min-height: 500px;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-color: black;
+    border-top: 12px solid rgb(35, 35, 35);
+    border-bottom: 12px solid rgb(35, 35, 35);
+}
+.p-left{
+height: 400px;
+width: 50%;
+
+
+
+}
+.p-right{
+ height: 400px;
+ width: 50%;
+ display: flex;
+ text-align: center;
+ justify-content: center;
+
+
+}
+#tv1{
+    height: 87%;
+    width: 68%;
+    padding-top:100px ;
+    text-align: left;
+    display: flex;
+   
+}
+.a1{
+    font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+   text-align:left;
+   margin-top: 20px;
+ padding: 150px 0px 10px 30%;
+   font-size:50px ;
+  
+   color: #ffffff;
+}
+
+.a2{
+    font-size:25px ;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+   font-weight: 500;
+   text-align: left;
+padding: 20px 0px 0px 30%;
+}
+
+.piture-2{
+   
+   width: 100%;
+   min-height: 500px;
+    background-color: rgb(0, 0, 0);
+display: flex;
+    border-bottom: 12px solid rgb(35, 35, 35);
+}
+.p1-left{
+ height: 500px;
+ width: 50%;
+ margin-top: 20px;
+}
+.p2-right{
+ height: 500px;
+ width: 40%;
+ margin-top: 20px;
+ box-sizing: border-box;
+ text-align: center;
+ justify-content: center;
+
+
+}
+#tv2{
+    height: 77%;
+    width: 58%;
+    padding-top:44px ;
+    text-align: left;
+    display: flex;
+    padding-left: 32%;
+}
+
+.a3{
+    font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+   text-align:left;
+   margin-top: 20px;
+   padding: 53px 0px 15px 4%;
+   font-size:50px ;
+   color: #ffffff;
+}
+
+.a4{
+    font-size:25px ;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+   font-weight: 500;
+   text-align: left;
+padding: 10px 0px 0px 4%;
+}
+.piture-3{
+    display: flex;
+  width: 100%;
+  min-height: 500px;
+    background-size: cover;
+    background-color: black;
+    border-bottom: 12px solid rgb(35, 35, 35);
+}
+.p3-left{
+height: 400px;
+width: 50%;
+
+
+
+}
+.p4-right{
+ height: 400px;
+ width: 50%;
+ display: flex;
+ text-align: center;
+ justify-content: center;
+
+
+}
+#tv3{
+    height: 87%;
+    width: 60%;
+    padding-top:100px ;
+    text-align: left;
+    display: flex;
+    
+}
+.a5{
+    font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+   text-align:left;
+   margin-top: 20px;
+ padding: 150px 0px 10px 23%;
+   font-size:50px ;
+   color: #ffffff;
+}
+
+
+.a6{
+    font-size:25px ;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+   font-weight: 500;
+   text-align: left;
+padding: 20px 0px 0px 23%;
+}
+.piture-4{
+    display: flex;
+    background-color: black;
+    border-bottom: 12px solid rgb(35, 35, 35);
+    min-height: 500px;
+    
+}
+.p5-left{
+    width: 53%;
+height: 381px;
+display: flex;
+/* margin: auto; */
+text-align: right;
+position: relative;
+    
+ 
+}
+.a7{
+    font-weight: 800;
+font-family: Arial, Helvetica, sans-serif;
+text-align: left;
+margin-top: 20px;
+padding: 7px 15% 10px 0%;
+font-size: 50px;
+color: #ffffff;
+}
+
+#tv4{
+    height: 119%;
+width: 86%;
+padding-left: 29%;
+padding-top: 98px;
+text-align: center;
+display: flex;
+box-sizing: border-box;}
+.p6-right{
+    width: 50%;
+height: 300px;
+/* margin: auto; */
+padding-top: 80px;
+}
+    
+.a8{
+    font-size:25px ;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+   font-weight: 500;
+   text-align: left;
+padding: 10px 15% 0px 0%;
+margin: auto;
+}
+
+@media  (min-width: 970px )and ( max-width:1280px ) {
+
+.p-right{
+    height: 350px;
+ width: 50%;
+ display: flex;
+
+ text-align: center;
+ justify-content: center;
+}
+.p1-left{
+    height: 450px;
+ width: 50%;
+ margin-top: 20px;
+padding-right: 56px;
+}
+#tv2{
+    height: 77%;
+    width: 82%;
+    padding-top:44px ;
+    text-align: left;
+    display: flex;
+    padding-left: 27%;
+}
+#tv3{
+    height: 87%;
+    width: 84%;
+    padding-top:100px ;
+    text-align: left;
+    display: flex;
+}
+}
+@media   ( min-width:100px ) and ( max-width:970px ){
+
+.container{
+width: 975px;
+}
+.piture-1 {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 976px;
+
+}
+.piture-2{
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 976px;
+}
+.piture-3{
+    flex-direction: column;
+    text-align: center;
+    width: 976px;
+    justify-content: center;
+}
+.futer-9{
+height: 700px;
+min-width: 980px;
+}
+    
+
+  .aa{
+font-weight: 800;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+height: 88px;
+width: 479px;
+margin-top: 20px;
+padding: 150px 0px 10px 46%;
+font-size: 50px;
+color: #ffffff;
+}
+.bb{
+    font-size: 25px;
+font-family: Arial, Helvetica, sans-serif;
+color: #ffffff;
+width: 671px;
+font-weight: 500;
+text-align: center;
+padding: 20px 0px 0px 28%
+}
+#tv2{
+   
+height: 77%;
+width: 119%;
+padding-top: 44px;
+text-align: left;
+display: flex;
+padding-left: 38%;
+text-align: center;
+
+}
+#tv1{
+    height: 87%;
+    width: 88%;
+    margin: auto;
+    
+    display: flex;
+
+
+}
+.p-right{
+    margin: auto;
+    padding-bottom: 70px;
+
+}
+
+.p2-right{
+height: 500px;
+ width: 55%;
+ margin: auto;
+ 
+ box-sizing: border-box;
+ text-align: center;
+ justify-content: center;
+}
+
+.p3-left{
+height: 400px;
+width: 98%;
+margin: auto;}
+
+.p4-right {
+height: 410px;
+width: 85%;
+display: flex;
+text-align: center;
+margin: auto;
+justify-content: center;
+}
+.piture-4{
+flex-wrap: wrap;
+width: 980px;
+min-height: 900px;
+
+}
+#tv4{
+height: 119%;
+width: 200%;
+padding-left: 50%;
+}
+.p6-right{
+margin: auto;
+width: 800px;
+padding-left: 12%;
+}
+.a7{
+text-align: center;
+
+}
+.a8{
+text-align: center;
+}
+
+.futer{
+flex-direction:column;
+flex-wrap: wrap;
+padding: 2px 25% 0px 25%;
+}
+#ES{
+height: 58px;
+width: 600px;
+}
+
+.gret{   
+height: 60px;
+width: 150px;
+margin-top: 20px;
+}
+.div-1{
+font-size: 25px;
+}
+.esa{
+
+display: inline-flex;
+flex-direction: column;
+
+}
+#tv3{
+height: 74%;
+}
+.futer-div{
+flex-direction: column;
+flex-wrap: wrap;
+
+}
+.futer-div1{
+padding-left: 15%;
+}
+.futer-div2{
+padding-left: 15%;
+}
+.futer-div3{
+padding-left: 15%;
+}
+}
+.hedert{
+display:flexbox;
+font-size: 60px;
+font-weight: 800;
+color: #ffffff;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+justify-content: center;
+position: relative;
+margin-bottom: 40px;
+padding-top: 60px;
+}
+
+
+@media screen and (max-width:1000){
+
+.hedert{
+flex-direction: column;
+
+
+}
+
+
+}
+#select{
+flex-direction: column;
+}
+.futer-1{
+min-height: 1000px;
+min-width:980px;
+background-color: black;
+border-bottom: 12px solid rgb(35, 35, 35);
+}
+
+
+
+.div-1{
+padding: 20px;
+width: 62%;
+height: 30px;
+color: #ffffff;
+text-align: left;
+margin-left: auto;
+font-size: 28px;
+font-family: Arial, Helvetica, sans-serif;
+margin-bottom:12px;
+background-color: rgb(35, 35, 35);
+}
+.faa{
+padding: 10px;
+width: 3%;
+height: 50px;
+color: #ffffff;
+text-align: center;
+margin-right: auto;
+font-size: 28px;
+font-family: Arial, Helvetica, sans-serif;
+margin-bottom:12px;
+background-color: rgb(35, 35, 35);
+}
+.fa-solid{
+
+font-size: 30px;
+position:relative;
+}
+#text-4{
+font-size: 25px;
+text-align: center;
+color: #ffffff;
+display: inherit;
+margin-top: 60px;
+font-family: Arial, Helvetica, sans-serif;
+}
+.futer{
+text-align: center;
+margin: auto;
+}
+#Es{
+height: 58px;
+width: 400px;
+background-color: transparent;
+border-color: 1px #ffffff;  
+color: #ffffff;
+font-size: 20px;
+padding-left: 20px;
+margin-top: 20px;
+}
+.gret{    height: 60px;
+width: 150px;
+background-color: rgb(221, 42, 42);
+font-size: 18px;
+color: white;
+font-weight:400;
+margin-left:14px ;
+}
+#fa-1{
+text-align: center;
+}
+.f-11{
+display: flex;
+}
+.futer-9{
+background-color: black;
+position: relative;
+}
+.text-futer-1{
+color: #ffffff;
+font-size: 20px;
+padding-left: 5%;
+text-align: left;
+margin-left:11%;
+padding-top: 40px;
+
+}
+
+#text-futer-2{
+color: #ffffff;
+font-size: 15px;
+list-style: none;
+padding: 6px;
+margin: 10px;
+
+}
+.futer-div{
+display: flex;
+justify-content: space-evenly   ;
+}
+.futer-div1{
+height: 240px;
+width: 200px;
+margin: 40px 0% 0px 0%;
+}
+.futer-div2{
+height: 240px;
+width: 200px;
+margin: 40px 0% 0px ;
+}
+.futer-div3{
+height: 240px;
+width: 200px;
+margin: 40px 0% 0px ;
+}
+.f-s{
+margin-left: 16%;
+
+}
+#futer-select{
+height: 35px;
+width: 120px;
+border-radius: 10px;
+background: transparent;
+color: #ffffff;
+display: flex;
+}
+.india{
+margin-top: 5%;
+margin-left: 1%;
+color: #ffffff;
+}
+.futer-9{
+width: 100%;
+height: auto;
+padding-bottom: 4%;
+}
+    </style>
+</head>
+<body>
+    <div class="c">
+    <div class="container">
+    <div class="navleft">
+<img src="tv.png" id="netflix"> 
+    </div>
+      
+    <div class="navright">
+        <select name="" id="select">
+        <option value="">English</option>
+        <option value="">Hindi</option>
+        <button id="button">Sign in</button>
+      </select>
+      <button id="signin">Sign in</button>
+    </div>
+<div class="centar-ll">
+   <div class="l1"> <a >Unlimited movies, TV shows and more</a></div>
+    <br>
+    <div class="l2"><a >Watch anywhere. Cancel anytime.</a></div>
+    <br>
+    <div class="l3"><a > Ready to watch? Enter your email to create or restart your membership.</a></div>
+    <br>
+    <div class="esa"><input placeholder="Email address" id="email" type="email" required>
+    <button class="get">Get Started<i class="fa-light fa-greater-than" id="greter" style="color: #ffffff;"></i></button>
+</div></div>
+    </div>
+    <div class="piture-1 backgrund">
+        <div class="p-left">
+          <div class="a1 aa"  ><a >Enjoy on your TV</a><br></div>
+         <div class="a2 bb" > <a >Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</a></div> 
+        </div>
+        <div class="p-right">
+<img id="tv1" src="tv (1).png">
+        </div>
+    </div>
+        <div class="piture-2">
+            <div class="p1-left">
+                <img id="tv2" src="mobile-0819.jpg">
+              
+            </div>
+            <div class="p2-right">
+                <div class="a3 cc" ><a >Download your shows to watch offline</a><br></div>
+                <div class="a4 dd"><a >Save your favourites easily and always have something to watch.</a></div> 
+            </div>
+    </div>
+    <div class="piture-3">
+        <div class="p3-left">
+          <div class="a5 ee"><a >Watch everywhere</a><br></div>
+         <div class="a6 ff"><a >Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</a></div> 
+        </div>
+        <div class="p4-right">
+<img id="tv3" src="device-pile-in.png">
+        </div>
+    </div>
+    <div class="piture-4">
+        <div class="p5-left">
+            <img id="tv4" src="11.png">
+          
+        </div>
+        <div class="p6-right">
+            <div class="a7 gg" ><a >Download your shows to watch offline</a><br></div>
+            <div class="a8 hh"><a >Save your favourites easily and always have something to watch.</a></div> 
+        </div>
+</div>
+<div class="futer-1">
+    <h1 class="hedert" id="head">
+        <div>Frequently Asked </div>
+        <div> Questions</div>
+    </h1>
+    <div class="f-11"><div class="div-1">What is netflix?
+    </div>
+        <div class="faa"><i id="fa-1" class="fa-solid fa-plus"></i></div>
+    </div>
+    <div class="f-11"><div class="div-1">How much does netflix cost? </div>
+    <div class="faa"><i id="fa-1" class="fa-solid fa-plus"></i></div>
+   
+</div>
+    <div class="f-11"><div class="div-1">Where can l watch?</div>
+    <div class="faa"><i id="fa-1" class="fa-solid fa-plus"></i></div>
+    
+</div>
+    <div class="f-11"><div class="div-1">How do cancel?</div>
+    <div class="faa"><i id="fa-1" class="fa-solid fa-plus"></i></div>
+    
+</div>
+    <div class="f-11"><div class="div-1">What is netflix? </div>
+    <div class="faa"><i id="fa-1" class="fa-solid fa-plus"></i></div>
+   
+</div>
+    <div class="f-11"><div class="div-1">Is Netflix good for kids? </div>
+    <div class="faa"><i id="fa-1" class="fa-solid fa-plus"></i></div>
+   
+</div>
+    <a id="text-4">Ready to watch? Enter your email to create or restart your membership.</a>
+    <div class="futer"><input placeholder="Email Address" id="Es" type="email" required>
+    <button class="gret">Get Started<i class="fa-light fa-greater-than" id="gret" style="color: #ffffff;"></i></button>
+</div>
+</div>
+
+<div class="futer-9">
+    <div class="text-futer-1">Questions? Call 000-800-919-1694</div>
+<div class="futer-div">
+<div class="futer-div1">
+<li id="text-futer-2">FAQ</li>
+<li id="text-futer-2" >Media Centre</li>
+<li id="text-futer-2">Ways to Watch</li>
+<li id="text-futer-2">Cookie Preferences</li>
+<li id="text-futer-2">Speed Test</li>
+</div>
+<div class="futer-div2">
+    <li id="text-futer-2">Help Centre</li>
+<li id="text-futer-2">Investor Relations</li>
+<li id="text-futer-2">Terms of Use</li>
+<li id="text-futer-2">Corporate Information</li>
+<li id="text-futer-2">Legal Notices</li>
+</div>
+<div class="futer-div3">
+    <li id="text-futer-2">Account</li>
+<li id="text-futer-2">Jobs</li>
+<li id="text-futer-2">Privacy</li>
+<li id="text-futer-2">Contact Us</li>
+<li id="text-futer-2">Only on Netflix</li>
+</div>
+</div>
+<div class="f-s">
+    <select name="" id="futer-select">
+    <option value="">English</option>
+    <option value="">Hindi</option>
+    <button id="futer-button">Sign in</button>
+  </select>
+ <div class="india"><a id="india">Netflix India</a></div> 
+</div>
+</div>
+</div>
+
+</body>
+</html>
